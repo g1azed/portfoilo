@@ -1,0 +1,19 @@
+
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-style: normal;
+}
+/* 한자 폰트 noto serif hongkong*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Serif HK', serif;
+*/
+header{
+    width: 100%; height: 90px;
+    position: fixed;
+
+    border: 2px solid red;
+}
