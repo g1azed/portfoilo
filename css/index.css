@@ -39,25 +39,6 @@ body {
 
 }
 
-.menu {
-    color: #fff;
-    font-family: 'Pretendard-Regular';
-    font-size: calc(100vw * 28 / 1920);
-    display: block;
-    float: right;
-
-}
-
-.menu a {
-    color: #fff
-}
-
-
-.menu li {
-    width: calc(100vw * 475 /1920);
-    border-bottom: 1px solid #fff;
-    padding: 20px 0;
-}
 
 .intro_me {
     display: block;

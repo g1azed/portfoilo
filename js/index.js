@@ -1,6 +1,4 @@
 $(document).ready(function () {
-	// var target = $('.target');
-	// var zoom = target.data('zoom');
 
   // 마우스 커서 이벤트
   const circle = document.querySelector(".circle");
@@ -26,8 +24,6 @@ $(document).ready(function () {
     $(".circle").css('width','10px').css('height','10px');
   })
 
-
-
 });
 
 var textvh = $(window).innerWidth() * 0.5; // 5.33 vh
@@ -52,8 +48,9 @@ var elem = document.getElementById("main_lg");
 var scope = blotter.forText(text);
 
 scope.appendTo(elem);
-// Mouse Effect
 
+
+// Mouse Effect
 document.onmousemove = moveIt;
 function moveIt(event) {
   material.uniforms.uRotation.value = (event.clientX * .1);

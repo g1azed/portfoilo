@@ -18,11 +18,11 @@ $(document).ready(function () {
   
   const main_lg = $("#main_lg");
   main_lg[0].addEventListener("mouseenter", (e) => {
-    // console.log("mouseenter");
+    console.log("mouseenter");
     $(".circle").css('width','100px').css('height','100px');
   })
   main_lg[0].addEventListener("mouseleave", (e) => {
-    // console.log("mouseleave");
+    console.log("mouseleave");
     $(".circle").css('width','10px').css('height','10px');
   })
 
