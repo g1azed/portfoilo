@@ -14,15 +14,15 @@ $(document).ready(function () {
     circle.style.top = mouseY + "px";
   });
   
-  const main_lg = $("#main_lg");
-  main_lg[0].addEventListener("mouseenter", (e) => {
-    // console.log("mouseenter");
-    $(".circle").css('width','100px').css('height','100px');
-  })
-  main_lg[0].addEventListener("mouseleave", (e) => {
-    // console.log("mouseleave");
-    $(".circle").css('width','10px').css('height','10px');
-  })
+  // const main_lg = $("#main_lg");
+  // main_lg[0].addEventListener("mouseenter", (e) => {
+  //   // console.log("mouseenter");
+  //   $(".circle").css('width','100px').css('height','100px');
+  // })
+  // main_lg[0].addEventListener("mouseleave", (e) => {
+  //   // console.log("mouseleave");
+  //   $(".circle").css('width','10px').css('height','10px');
+  // })
 
 });
 
@@ -36,10 +36,10 @@ var text = new Blotter.Text("洪秀知", {
 var material = new Blotter.ChannelSplitMaterial();
 // material.uniforms.uSpeed.value = 0.25;
 
-material.uniforms.uOffset.value = 0.05;
-material.uniforms.uRotation.value = 50;
+material.uniforms.uOffset.value = 0.95;
+material.uniforms.uRotation.value = 30;
 material.uniforms.uApplyBlur.value = 1; // 0 false, 1 true
-material.uniforms.uAnimateNoise.value = .3;
+material.uniforms.uAnimateNoise.value = .2;
 var blotter = new Blotter(material, {
   texts: text,
 });

@@ -1,0 +1,133 @@
+main {
+    background-color: #191919;
+}
+
+body {
+    /* cursor: none; */
+}
+
+.circle {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+
+    /* transition: all 0.2s; */
+
+}
+
+.sec {
+    width: 100vw;
+    height: 100vh;
+    padding: 0 calc(100vw * 20/1920);
+}
+
+.sec1 {
+    padding: 0 0 0 calc(100vw * 20/1920);
+    position: relative;
+}
+
+#main_lg {
+    display: inline-block;
+    /* display: none; */
+    width: calc(100vw * 120 / 1920);
+    height: auto;
+    margin-top: calc(100vh* 170 / 1920);
+
+    clip-path: circle(150px at var(--x) var(--y)); 
+
+}
+#main_lg_before{
+    /* content: "洪秀知"; */
+    position: absolute;
+    /* background-color: white; */
+    color: white;
+    font-family: "'Noto Serif HK', serif";
+    font-size: 330px;
+    filter: blur(8px);
+    /* paddingLeft: 40,
+    paddingRight: 40, */
+}
+
+
+.intro_me {
+    display: block;
+    position: absolute;
+    bottom: 60px;
+}
+
+.intro_me p {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    font-size: calc(100vw * 38/1920);
+    color: #fff;
+    padding: 5px 0;
+}
+
+
+
+
+
+
+.wrap,
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.box {
+   /* background: url('https://mblogthumb-phinf.pstatic.net/MjAxODA2MTdfMjUx/MDAxNTI5MTc0MDkwNTQz.MJVda2wbit3NjcSB5Y46f7ch0EkahWDZ3F5G3FurH_Ug.anw1t_qEZUziZ3whFykUzX4gNv_Sl5nW5Ekv97BzRSwg.PNG.sinnam88/%EC%A7%80%EB%B8%8C%EB%A6%AC_%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B4_%EA%B3%A0%ED%99%94%EC%A7%88__%2871%29.png?type=w800'); */
+   background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  font-family: "'Noto Serif HK', serif";
+}
+.box:nth-child(1) {
+  /* filter: blur(8px); */
+  filter: brightness(0%);
+}
+.box:nth-child(2) {
+  clip-path: circle(200px at var(--x) var(--y)); 
+   /*보여줄 크기 at 원 중앙 지점*/
+}
+.box h2{
+  font-family: 'Noto Serif HK', serif;
+  color: #fff;
+  font-size: 330px;
+  font-weight: 300;
+  position: absolute;
+  transform: translate(calc(var(--x)/25), calc(var(--y)/25));
+}
+
+
+.circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 23px rgba(0,0,0,0.5);
+  top: -150px;
+  left: -150px;
+  transform: translate(var(--x),var(--y));
+}
+
+/* 모바일 반응형*/
+@media screen and (max-width: 768px) {
+    #main_lg {
+        display: none;
+    }
+}

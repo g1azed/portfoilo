@@ -11,12 +11,14 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
-    height: 100px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     border: 1px solid #fff;
     background-color: transparent;
     transform: translate(-50%, -50%);
+
+    /* transition: all 0.2s; */
 
 }
 
@@ -33,11 +35,15 @@ body {
 
 #main_lg {
     display: inline-block;
+    /* display: none; */
     width: calc(100vw * 120 / 1920);
     height: auto;
     margin-top: calc(100vh* 170 / 1920);
 
+    /* clip-path: circle(150px at var(--x) var(--y));  */
+
 }
+
 
 
 .intro_me {
