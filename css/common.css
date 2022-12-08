@@ -22,6 +22,10 @@ header{
 }
 /* left: calc(100vw* 1350 /1500); */
 
+main{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
 .menu {
     color: #fff;
     font-family: 'Pretendard-Regular';
@@ -43,6 +47,7 @@ header{
     /* left: 200px; */
     left: calc(100vw*200/1500);
     transition: all 0.3s;
+
 }
 .menu li:hover{
     left: 0;
