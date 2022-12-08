@@ -61,13 +61,13 @@ material.uniforms.uSpeed.value = 0.25;
 // produce more dramatic changes in the appearance of your
 // text as it animates, but you will likely want to keep
 // the value below 1.0.
-material.uniforms.uVolatility.value = 0.20;
+material.uniforms.uVolatility.value = 0.10;
 
 var blotter = new Blotter(material, {
   texts: text,
 });
 
-var elem = document.getElementById("blotter");
+var elem = document.getElementById("main_lg");
 var scope = blotter.forText(text);
 
 scope.appendTo(elem);
