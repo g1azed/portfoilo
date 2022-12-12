@@ -1,21 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suzy</title>
 
-
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/reset.css" rel="stylesheet">
-    <link href="./css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/info.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- <span class="material-symbols-outlined"> content_copy </span> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
 </head>
+
 <body>
-    
+    <section class="wrapper">
+        <div class="sec1">
+            <div class="intro_eng">
+                <p id="intro_title"> Hello people! </p>
+                <span> This is the Portfolio site <br>
+                    of suzy Hong, the Front-end developer</span>
+            </div>
+            <!-- <img class="sec1_img" src="./img/conceptshot/concept_2.png"> -->
+            <div class="back"> </div>
+            <span class="intro_kr">
+                항상 도전정신이 불타오르는 신입 프론트엔드 개발자입니다.<br>
+                <br>
+                하고싶은 것도, 하고싶지않은 것도 해냅니다.<br>
+                누구나 절대 나가지 않는 길을 찾을 수 있도록<br>
+                꺼지지 않는 불빛으로 변하는 과정을 거치고 있습니다.
+            </span>
+        </div>
+
+    </section>
+
+    <section class="horizontal-scroll-section">
+        <div class="scene">
+            <div class="horizontal-scroll-section__content-wrapper  wrapper">
+                <!-- <span class="have"> I have A </span> -->
+                <div class="horizontal-scroll-section__content-section content_sec1">
+                    <span class="have"> I have A </span>
+                </div>
+
+                <div class="horizontal-scroll-section__content-section content_sec2">
+                    <span class="content_title"> * </span>
+                    <ul>
+                        <li> <span class="content_title"> About Me</span></li>
+                        <li> <span class="second_title"> Name </span> <span> Hong Suzy </span></li>
+                        <li> <span class="second_title"> Tel </span> 
+                            <span> +82 10-2456-7168 
+                                <span  data-clipboard-text="010-2456-7168" class="copy material-symbols-outlined"> content_copy </span> 
+                            </span></li>
+
+                        <li> <span class="second_title"> E-mail </span>
+                            <span> victoria1230120@gmail.com 
+                                <span  data-clipboard-text="victoria1230120@gmail.com" class="copy material-symbols-outlined"> content_copy </span> 
+                            </span></li>
+                        <li> <span class="second_title"> Github </span> 
+                            <span> @g1azed
+                                <span  data-clipboard-text="https://github.com/g1azed" class="copy material-symbols-outlined"> content_copy </span> 
+                            </span></li>
+                        <li> <span class="second_title"> Insta </span>
+                             <span> @haxe._m_i 
+                                <span  data-clipboard-text="@haxe._m_i " class="copy material-symbols-outlined"> content_copy </span> 
+                             </span></li>
+                    </ul>
+                </div>
+
+                <div class="horizontal-scroll-section__content-section content_sec3">
+                    <span class="content_title"> * </span>
+                    <ul>
+                        <li> <span class="content_title">Awards</span></li>
+                        <li> <span class="second_title "> 2022 </span>
+                            <span> 2022년도 졸업심사 최우수상</span>
+                        </li>
+                        <li> <span class="second_title hidden"> 2022 </span>
+                            <span> 2022년도 졸업심사 PT우수상</span>
+                        </li>
+                        <li> <span class="second_title hidden">2022 </span>
+                            <span> 2022년도 학과 공로상 </span>
+                        </li>
+                        <li> <span class="second_title hidden">2022 </span>
+                            <span> 국제커뮤니케이션디자인 동상 </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="horizontal-scroll-section__content-section content_sec4">
+                    <span class="content_title"> *</span>
+
+                    <ul>
+                        <li> <span class="content_title"> Activities </span> </li>
+                        <li> <span class="second_title"> 2020 </span> 계원예술대학교 영상동아리DIMO </li>
+                        <li> <span class="second_title hidden"> 2020 </span> 2020년도 졸업준비위원회 영상팀 </li>
+                        <li> <span class="second_title"> 2022 </span> 2학년 1,2학기 프로그래밍반 반대표 </li>
+                        <li> <span class="second_title hidden"> 2022 </span> 2학년 1학기 멘토링프로그램 프로그래밍 멘토 </li>
+                        <li> <span class="second_title hidden"> 2022 </span> 2022년도 졸업준비위원회 홍보팀 </li>
+                        <li> <span class="second_title hidden"> 2022 </span> 2022년도 졸업전시 브랜딩팀 프로그래머 </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 레이아웃 고민,, 고밍,,, ㅜㅜ-->
+    <section class="wrapper"> 
+        <div class="sec3">
+            <div class="skill sk_mark">
+                <p> Mark up </p>
+                <div class="skill_list">
+                    <p class="skill_name"> HTML5 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>HTML5</title>
+                            <path
+                                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
+                        </svg>
+                    </p>
+                    <p class="skill_write">웹표준을 지키며 기본적인 마크업을 구성합니다. 단순히 잘 보이기 위해 코드를 짜는게 아닌,
+                        세부적인 구조를 짜려 노력합니다. 용도에 맞는 태그를 쓰고 있습니다.
+                    </p>
+                </div>
+                <div class="skill_list">
+                    <p class="skill_name"> CSS3 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>CSS3</title>
+                            <path
+                                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" />
+                        </svg>
+                    </p>
+                    <p class="skill_write">구조에 따른 스타일링을 구현하고있습니다. 반응형을 위해 뷰포트 기준으로 단위를 지정하며,
+                        상황에 맞는 display를 선택해 레이아웃을 구현합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        
+    </section>
+
+
+    <!-- <script src='https://dev.clicky.co.uk/codepen_utils/utils.js'></script> -->
+    <script src="./js/info_scroll.js"></script>
+    <script src="./js/info.js"></script>
+
 </body>
+
 </html>
