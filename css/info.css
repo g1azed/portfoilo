@@ -179,7 +179,7 @@ svg{
   width: 35px; height: 25px;
   cursor: pointer;
 }
-.content_sec4 li:nth-child(6){
+.content_sec4 li:nth-child(7){
   margin-top: calc(100vh*20/1080);
 }
 
