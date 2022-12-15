@@ -24,6 +24,8 @@ header{
     color: white;
     z-index: 3;
     padding: 10px 0;
+
+    mix-blend-mode: difference;
 }
 header a{
     margin-top: calc(100vh*10/1080);
@@ -59,6 +61,8 @@ nav{
     right: 2%;
     top: calc(100vh*200/1080);
     z-index: 3;
+
+    mix-blend-mode: difference;
 }
 .menu {
     color: #fff;

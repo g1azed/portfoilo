@@ -1,34 +1,111 @@
-/* body {
-  margin: 2em;
-} */
-
-textarea {
-  width: 100%;
-}
-.content-head {
-  font-weight: 400;
-  /* text-transform: uppercase; */
-  letter-spacing: 0.1em;
-  margin: 2em 0 1em;
-}
-.is-center {
-  text-align: center;
-}
-.button-success {
+html,body {
+  /* margin: 2em; */
+  overflow: hidden;
+  background-color: #191919;
   color: white;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  background: rgb(28, 184, 65); /* this is a green */
 }
-.button-xlarge {
-  font-size: 125%;
+
+header{
+  color: #fff !important;
 }
-button {
-  float: right;
+.menu li{
+  color: #191919 !important;
+  border-bottom: #191919 !important;
 }
-#name, #email {
-  width: 50%;
+
+main{
+  margin-top:70px;
+    background-color: #191919;
+  height: 100vh;
 }
-.honeypot-field {
-  display: none;
+
+.sec1{
+  background-image: url("../img/contact/blur22.jpeg");
+  width: 100%; height: 500px;
+  background-size: 100%;
+  color: white;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sec1 h1{
+  font-size: calc(100vw * 30/1920);
+}
+.sec1 .second_title{
+  width: calc(100vw* 100/1920);
+  display: inline-block;
+  line-height: 160%;
+}
+
+.sec2{
+  width: calc(100vw*1600/1920);
+  height: auto;
+  display: block;
+  margin: 30px auto;
+
+}
+.form_elements{
+  display: block;
+  width: calc(100vw*1000/1920);
+  margin: 0 auto;
+}
+
+.your{
+  display: flex;
+
+  margin-bottom: calc(100vh*60/1080);;
+}
+label{
+  display: block;
+  width: calc(100vw* 250/1920);
+}
+
+.group2{
+  margin-left: calc(100vw*50/1920);
+}
+input{
+  /* width: 1000px; */
+  /* border-radius: 8px; */
+  background-color: transparent;
+
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+input#name{
+  width: calc(100vw*500/1920);
+  height: calc(100vh*50/1080);
+}
+input#email{
+  width: calc(100vw*500/1920);
+  height: calc(100vh*50/1080);
+}
+
+.message_field{
+  width: calc(100vw*1000/1920);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+textarea#message{
+  background-color: transparent;
+  width: calc(100vw*950/1920);
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+button{
+  display: inline;
+  width: calc(100vw*60/1920);
+  height: calc(100vw*60/1920);
+  margin-left: calc(100vw*50/1920);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  background-color: #eee;
+}
+.thankyou_message{
+  color: white;
+  margin-top: 50px;
 }

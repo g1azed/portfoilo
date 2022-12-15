@@ -2,90 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suzy</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suzy</title>
 
-    <link href="./css/common.css" rel="stylesheet">
-    <link href="./css/reset.css" rel="stylesheet">
-    <link href="./css/index.css" rel="stylesheet">
+  <link href="./css/common.css" rel="stylesheet">
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/contact.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="./css/contact.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
 
 </head>
 
 
 <body>
-    <h2 class="content-head is-center">Contact Us!</h2>
-    <aside>
-         <p>
-             We would <em>love</em> to hear from you! </p>
-             <p>Please use the <b><em>Contact Form</em></b>
-             to send us a message.
-         </p>
-     </aside>
-  
-  <!-- START HERE -->
-     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-     <!-- Style The Contact Form How Ever You Prefer -->
-     <!-- <link rel="stylesheet" href="style.css"> -->
-  
-  
-    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-    action="https://script.google.com/macros/s/AKfycbwtzmJbEXhrMkPjVTBrcLkWsz0O2XZEe_fwVI4qrrtxxWasUwVvjiCsAJrtUc4mS8nU/exec">
-      <!-- change the form action to your script url -->
-  
-      <div class="form-elements">
-        <fieldset class="pure-group">
-          <label for="name">Name: </label>
-          <input id="name" name="name" placeholder="Write your name" />
-        </fieldset>
-  
-        <fieldset class="pure-group">
+
+  <header>
+    <span>
+      @ glazed.io
+    </span>
+    <a href="./index.html">
+      <img id="header_logo" src="./img/logo/logo_white.png" alt="메인페이지 로고">
+    </a>
+    <p>
+      +82 10 2456 7168
+    </p>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <a href="./Info.html">
+        <li class="m_li_1"> Info </li>
+      </a>
+      <a href="./work.html">
+        <li class="m_li_2"> Work </li>
+      </a>
+      <a href="./contact.html">
+        <li class="m_li_3"> Contact </li>
+      </a>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="sec1">
+      
+        <h1> CONTACT to ME </h1>
+      <div class="contact_list">
+        <ul>
+          <li> <span class="second_title"> Tel </span>
+            <span> +82 10-2456-7168 
+              <span data-clipboard-text="010-2456-7168" class="copy material-symbols-outlined">
+                content_copy </span>
+            </span>
+          </li>
+          <li> <span class="second_title"> E-mail </span>
+            <span> victoria1230120@gmail.com 
+              <span data-clipboard-text="victoria1230120@gmail.com " class="copy material-symbols-outlined">
+                content_copy </span>
+            </span>
+          </li>
+          <li> <span class="second_title"> Github </span>
+            <span> @g1azed
+              <span data-clipboard-text="https://github.com/g1azed" class="copy material-symbols-outlined">
+                content_copy </span> </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="sec2">
+      <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+        action="https://script.google.com/macros/s/AKfycbwtzmJbEXhrMkPjVTBrcLkWsz0O2XZEe_fwVI4qrrtxxWasUwVvjiCsAJrtUc4mS8nU/exec">
+        <!-- change the form action to your script url -->
+
+        <div class="form_elements">
+          <div class="your">
+            <fieldset class="pure_group">
+              <label for="name"> YOUR NAME </label>
+              <input id="name" name="name" placeholder=" " />
+            </fieldset>
+
+            <fieldset class="pure_group group2">
+              <label for="email"> Your Email Address </label>
+              <input id="email" name="email" type="email" value="" required placeholder="" />
+            </fieldset>
+          </div>
           <label for="message">Message: </label>
-          <textarea id="message" name="message" rows="10"
-          placeholder="Tell us what's on your mind..."></textarea>
-        </fieldset>
-  
-        <fieldset class="pure-group">
-          <label for="email"><em>Your</em> Email Address:</label>
-          <input id="email" name="email" type="email" value=""
-          required placeholder="your.name@email.com"/>
-        </fieldset>
-  
-        <!-- <fieldset class="pure-group">  
-          <label for="color">Favourite Color: </label>
-          <input id="color" name="color" placeholder="green" />
-        </fieldset> -->
-  
-        <fieldset class="pure-group honeypot-field">
-          <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-          <input id="honeypot" type="text" name="honeypot" value="" />
-        </fieldset>
-  
-        <button class="button-success pure-button button-xlarge">
-          <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-      </div>
-  
-      <!-- Customise the Thankyou Message People See when they submit the form: -->
-      <div class="thankyou_message" style="display:none;">
-        <h2><em>Thanks</em> for contacting us!
-          We will get back to you soon!</h2>
-      </div>
-  
-    </form>
-  
-    <!-- Submit the Form to Google Using "AJAX" -->
-    <script data-cfasync="false" src="./js/form-submission-handler.js"></script>
+          <fieldset class="message_field">
+
+            <textarea id="message" name="message" rows="10" placeholder=""></textarea>
+            <button class="button-success pure-button button-xlarge">
+              <i class="fa fa-paper-plane"></i></button>
+          </fieldset>
+
+          <!-- Customise the Thankyou Message People See when they submit the form: -->
+          <div class="thankyou_message" style="display:none;">
+            <h2><em>Thanks</em> for contacting me!
+              3일 내로 답장이 갈거에요 ;> </h2>
+          </div>
+
+
+
+        </div>
+
+
+      </form>
+
+
+    </section>
+
+  </main>
+
+
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="./js/form-submission-handler.js"></script>
+  <script src="./js/info.js"></script>
   <!-- END -->
-  
-  </body>
+
+</body>
 
 </html>
