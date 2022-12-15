@@ -30,6 +30,7 @@ var textvh = $(window).innerWidth() * 0.5; // 5.33 vh
 var text = new Blotter.Text("洪秀知", {
   family: "'Noto Serif HK', serif",
   size: 330,
+  // size: textvh,
   fill: "#fff",
 });
 
@@ -56,3 +57,4 @@ function moveIt(event) {
   material.uniforms.uRotation.value = (event.clientX * .1);
   material.uniforms.uOffset.value = (event.clientX * .0001);
 }
+

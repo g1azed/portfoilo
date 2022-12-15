@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.slick_slide').slick({
         rows: 1,             //몇 줄로 나타낼건지
         infinite: false,      //무한반복 (boolean) -default:true
@@ -32,15 +32,60 @@ $(document).ready(function(){
 
 
     });
+    $(".inner_slider").slick({
+        slidesToShow: 1,
+        arrows: true,
+    })
 
-    $('.slick_slide').on('wheel', function(e) {
+    $('.slick_slide').on('wheel', function (e) {
         e.preventDefault();
-      
+
         if (e.originalEvent.deltaY < 0) {
-          $(this).slick('slickPrev');
+            $(this).slick('slickPrev');
         } else {
-          $(this).slick('slickNext');
+            $(this).slick('slickNext');
         }
-      });
-      
-  });
+    });
+// 오른쪽텍스트영역에서만 전체스크롤링가능,,,
+    $(".slide_right").on('wheel', function(e) {
+        e.stopPropagation();
+    })
+
+
+    // 텍스트 접었다 펴기
+    // $('.work_sub').each(function () {
+    //     var content = $(this).children('.sub_report');
+    //     var content_txt = content.text();
+    //     var content_txt_short = content_txt.substring(0, 100) + "...";
+    //     var btn_more = $('<a href="javascript:void(0)" class="more">⌄</a>');
+
+    //     $(this).append(btn_more);
+
+    //     if (content_txt.length >= 1000) {
+    //         content.html(content_txt_short)
+    //     } else {
+    //         btn_more.hide()
+    //     }
+
+    //     btn_more.click(toggle_content);
+    //     // 아래 bind가 안 되는 이유는??
+    //     // btn_more.bind('click',toggle_content);
+
+    //     function toggle_content() {
+    //         if ($(this).hasClass('short')) {
+    //             // 접기 상태
+    //             $(this).html('⌄');
+    //             content.html(content_txt_short)
+    //             $(this).removeClass('short');
+    //         } else {
+    //             // 더보기 상태
+    //             $(this).html('⌃');
+    //             content.html(content_txt);
+    //             $(this).addClass('short');
+
+    //         }
+    //     }
+    // });
+
+});
+

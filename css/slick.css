@@ -108,7 +108,7 @@
 }
 .slick-vertical .slick-slide
 {
-    /* display: inline-flex; */
+    display: inline-flex;
 
     height: auto;
 
