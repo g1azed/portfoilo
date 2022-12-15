@@ -10,8 +10,8 @@ $(document).ready(function () {
     const mouseX = e.clientX;
     const mouseY = e.clientY;
 
-    circle.style.left = mouseX + "px";
-    circle.style.top = mouseY + "px";
+    // circle.style.left = mouseX + "px";
+    // circle.style.top = mouseY + "px";
   });
   
   // const main_lg = $("#main_lg");
