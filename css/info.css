@@ -254,7 +254,7 @@ svg{
 /* sec4 */
 .sec4{
   width: 100vw; height: 150vh;
-  /* position: relative; */
+  position: relative;
   /* overflow: auto; */
 }
 .sec4 .persue_left{
@@ -282,4 +282,16 @@ svg{
   background-color: #191919;
   width: 100vw; height: 100vh;
 }
-
+.to_contact{
+  color: #191919;
+  font-size: calc(100vw*100/1920);
+  position: absolute;
+  bottom: 100px;
+}
+.to_contact a:visited{
+  color: #191919;
+}
+.to_contact a:hover{
+  color: #191919;
+  text-decoration: line-through;
+}
