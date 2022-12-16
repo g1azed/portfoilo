@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
 	var scrollValue = $(document).scrollTop();
-	console.log(scrollValue);
+	// console.log(scrollValue);
 
   if(scrollValue >= 480){
     changeIMG();
