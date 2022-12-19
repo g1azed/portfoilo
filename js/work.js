@@ -32,9 +32,14 @@ $(document).ready(function () {
 
 
     });
+
     $(".inner_slider").slick({
         slidesToShow: 1,
         arrows: true,
+        vertical: false,
+        prevArrow : "<button type='button' class='slick-prev'> < </button>",		// 이전 화살표 모양 설정
+        nextArrow : "<button type='button' class='slick-next'> > </button>",		// 다음 화살표 모양 설정
+         
     })
 
     $('.slick_slide').on('wheel', function (e) {
@@ -47,11 +52,15 @@ $(document).ready(function () {
         }
     });
 // 오른쪽텍스트영역에서만 전체스크롤링가능,,,
-    $(".slide_right").on('wheel', function(e) {
+    $(".slide_left").on('wheel', function(e) {
         e.stopPropagation();
     })
 
-
+// 현재 보여지는 슬라이드가 몇번인지
+   const slick_num =  $('.slick_slide').slick('slickCurrentSlide'); 
+   slick_num[0].on('wheel', function(e) {
+    e.stopPropagation();
+})
     // 텍스트 접었다 펴기
     // $('.work_sub').each(function () {
     //     var content = $(this).children('.sub_report');
