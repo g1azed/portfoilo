@@ -29,18 +29,32 @@ svg{
   display: block;
   margin: 0 auto;
 
-  background-image: url("../img/info/conceptshot/concept_2.png");
+  background: url("../img/info/conceptshot/concept_2.png");
   background-size: contain;
   background-repeat: no-repeat;
   /* background-attachment: scroll; */
   z-index: -8;
 }
+/* .back_2{
+  width: calc(100vw*930/1920); height:calc(100vh*1000/1080);
+  display: block;
+  margin: 0 auto;
+
+  background: url("../img/info/conceptshot/concept_3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-attachment: scroll; */
+  z-index: -8;
+} */
 /* 스크롤할때 이미지가 y 움직이려면 걍 트랜스폼인가 y하믄 될듯*/
-/* .sec1_img{
+.img_wrapper{
   width: 930px; height: auto;
   display: block;
-   margin: 240px auto;
-} */
+   margin: 20px auto;
+}
+.sec1_img{
+  width: 930px; height: auto;
+}
 .sec1 .intro_eng{
   position: absolute;
   top: calc(100vw*160/1920);
@@ -272,7 +286,7 @@ svg{
   font-size: 150px;
   white-space:normal;
   display: inline;
-  opacity: 0.3;
+  opacity: 0.1;
 }
 .sec4 .persue_right{
   width: 50vw; height: auto;
@@ -290,8 +304,8 @@ svg{
 .to_contact{
   color: #191919;
   font-size: calc(100vw*100/1920);
-  position: absolute;
-  bottom: 100px;
+  position: relative;
+  top: 900px;
 }
 .to_contact a:visited{
   color: #191919;

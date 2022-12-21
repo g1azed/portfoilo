@@ -17,7 +17,7 @@ $(window).scroll(function () {
 	var scrollValue = $(document).scrollTop();
 	// console.log(scrollValue);
 
-  if(scrollValue >= 480){
+  if(scrollValue >= 280){
     changeIMG();
   }else{
     changeIMG_2();
@@ -33,7 +33,9 @@ function changeIMG() {
   //img 태그의 클래스 명으로 변경 할 때
   // $(".imgClass").attr("src", "/data/img2.png");
   // $(".back").css("background-image", "../img/info/conceptshot/concept_3.png");
+  
   $(".back").css({"background-image":"url('../img/info/conceptshot/concept_3.png')"}); 	
+
 }
 function changeIMG_2() {
   $(".back").css({"background-image":"url('../img/info/conceptshot/concept_2.png')"}); 	
