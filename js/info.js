@@ -34,11 +34,19 @@ function changeIMG() {
   // $(".imgClass").attr("src", "/data/img2.png");
   // $(".back").css("background-image", "../img/info/conceptshot/concept_3.png");
   
-  $(".back").css({"background-image":"url('../img/info/conceptshot/concept_3.png')"}); 	
+  $(".back").css({
+    "background":"url('../img/info/conceptshot/concept_3.png')",
+    "background-size" : "contain",
+    "background-repeat": "no-repeat"
+  }); 	
 
 }
 function changeIMG_2() {
-  $(".back").css({"background-image":"url('../img/info/conceptshot/concept_2.png')"}); 	
+  $(".back").css({
+    "background":"url('../img/info/conceptshot/concept_2.png')",
+    "background-size" : "contain",
+    "background-repeat": "no-repeat"
+  }); 	
 }
 
 
