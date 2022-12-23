@@ -12,6 +12,9 @@ header{
   color: #191919 !important;
   border-bottom: #191919 !important;
 }
+nav{
+  mix-blend-mode: normal !important;
+}
 
 main{
   margin-top:70px;
@@ -32,6 +35,19 @@ main{
 .sec1 h1{
   font-size: calc(100vw * 30/1920);
 }
+.contact_me a{
+  margin-top: calc(100vh*50/1080);
+  font-size: calc(100vw*50/1920);
+  color: #fff;
+}
+.contact_me a:hover{
+  background-color: #eee;
+  color: #191919;
+}
+.contact_me a:visited:active{
+  color: #fff;
+}
+
 .sec1 .second_title{
   width: calc(100vw* 100/1920);
   display: inline-block;

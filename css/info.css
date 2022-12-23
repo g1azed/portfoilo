@@ -5,6 +5,7 @@ body {
 body, html{
   /* max-width: 100vw; */
   /* overflow-x: hidden; */
+  background-color: #eee;
 }
 
 
@@ -104,7 +105,7 @@ svg{
   top: 0;
   left: 0;
   right: 0;
-  /* background-color: #191919; */
+  background-color: #eee;
   /* color: #fff; */
 
 }
@@ -266,11 +267,13 @@ svg{
 
 /* sec4 */
 .sec4{
-  width: 100vw; height: 150vh;
+  width: 100vw; height: 200vh;
   /* position: relative; */
+  z-index: 0;
+  background-color: #eee;
 }
 .for_persue{
-  padding: 100px 40px;
+  padding: 100px calc(100vw*40/1920);;
 }
 .sec4 .persue_left{
   width: 50vw; height: 50vh;
@@ -278,25 +281,43 @@ svg{
   left:0; */
   /* display: inline-block; */
   display: inline;
-  position: -webkit-sticky; /* 사파리 브라우저 지원 */
+  position: -webkit-sticky; 
+  /* 사파리 브라우저 지원 */
   position: sticky;
-  top: 250px;
-  z-index: -1;
+  top: calc(100vh*200/1080);
 }
-.persue_left p{
-  font-size: 150px;
+.persue_left p:not(.to_contact){
+  font-size: calc(100vw*100/1920);
   white-space:normal;
   display: inline;
-  opacity: 0.1;
+  opacity: 0.2;
 }
-.sec4 .persue_right{
-  width: 50vw; height: auto;
-  display: inline-block;
+.to_contact{
+  margin-top: calc(100vh*440/1080);
+}
+.to_contact a{
+  color: #191919;
+}
+.to_contact a:hover:before{
+  content:"⎯⎯⎯⎯⎯⎯⎯⎯";
+  /* content: "                "; */
+  color: #eee;
+  opacity: 0.9;
   position: absolute;
-  right:0;
+  left: -20px;
 
 }
-.persue_li{
+.to_contact a:visited{
+  color: #191919;
+}
+.sec4 .persue_right{
+  width: 35vw; height: auto;
+  display: inline-block;
+  position: absolute;
+  overflow-y:hidden;
+  right:calc(100vw*40/1920);
+}
+.persue_li:not(.last_persue){
   margin-bottom: 200px;
 }
 
@@ -305,13 +326,13 @@ svg{
 .to_contact{
   color: #191919;
   font-size: calc(100vw*100/1920);
-  position: relative;
-  top: 900px;
+  /* position: relative;
+  top: 900px; */
 }
 .to_contact a:visited{
-  color: #191919;
+  /* color: #191919; */
 }
 .to_contact a:hover{
-  color: #191919;
-  text-decoration: line-through;
+  /* color: #191919; */
+  /* text-decoration: line-through; */
 }
