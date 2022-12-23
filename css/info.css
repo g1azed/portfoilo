@@ -284,16 +284,18 @@ svg{
   position: -webkit-sticky; 
   /* 사파리 브라우저 지원 */
   position: sticky;
-  top: calc(100vh*200/1080);
+  top: calc(100vh*100/1080);
 }
 .persue_left p:not(.to_contact){
   font-size: calc(100vw*100/1920);
   white-space:normal;
-  display: inline;
+  display: inline-block;
   opacity: 0.2;
 }
 .to_contact{
   margin-top: calc(100vh*440/1080);
+  display: inline-block;
+  width: 40vw;
 }
 .to_contact a{
   color: #191919;
@@ -319,6 +321,13 @@ svg{
 }
 .persue_li:not(.last_persue){
   margin-bottom: 200px;
+}
+.persue_li span{
+  margin-bottom: 100px;
+}
+.persue_li p{
+  margin-top: 20px;
+  line-height: 150%;
 }
 
 
