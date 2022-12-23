@@ -34,10 +34,10 @@ main{
 }
 .sec1 h1{
   font-size: calc(100vw * 30/1920);
+  margin-bottom: calc(100vh*150/1080);
 }
 .contact_me a{
-  margin-top: calc(100vh*50/1080);
-  font-size: calc(100vw*50/1920);
+  font-size: calc(100vw*40/1920);
   color: #fff;
 }
 .contact_me a:hover{
